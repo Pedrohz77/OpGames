@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt">
 
 <head>
      <meta charset="UTF-8">
@@ -10,44 +10,221 @@
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Lalezar&display=swap" rel="stylesheet">
 
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lalezar&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lalezar&display=swap"
+          rel="stylesheet">
+          
+     <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
 
+     <script src="https://kit.fontawesome.com/657056d04b.js" crossorigin="anonymous"></script>
      <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-     <div class="fundo-menu">
-         <header>
-               <div class="container-grid">
-                 <img src="img/logo.png" alt="Logo da empresa OpGames">
-                  <nav class="menu">
-                       <a href="#sobre">Sobre Nós</a>
-                       <a href="#jogo">Nosso Jogo</a>
-                       <a href="#">Cases de sucesso</a>
-                       <a href="#">Cadastro</a>
-                       <a href="#">Contatos</a>                        
-                  </nav>
+           <header>
+               <div class="container-grid"> 
+                    <div>
+                    <img src="img/logo.png" alt="Logo da empresa OpGames">
+                    </div>
+                    <nav class="menu">
+                         <a href="#sobre">Sobre Nós</a>
+                         <a href="#jogo">Nosso Jogo</a>
+                         <a href="#cases">Cases de sucesso</a>
+                         <a href="#cadastro">Cadastro</a>
+                         <a href="#contatos">Contatos</a>
+                    </nav>
                </div>
-          </header>
-          <section id="sobre">
-               <h2>Sobre Nós</h2>
-          <p>Começamos no Brasil com gamificação onde ajudava empresas a  fazerem
-               sistemas e sites que facilitavam algum problema como por exemplo 
-               tarefa, separação de objetos, de forma interativa e divertida recompen-
-               sandos os funcionários também, que fez com que ela pudesse  buscar 
-               mais visibilidades aos projetos deles, se tornando uma marca de grande
-               nome  e sucesso         
-          </p>
+
+          <section id="sobre" class="sobre">
+               <div class="sobre-text">
+                    <div class="sobre-title">
+                 <span> Sobre-Nós </span>
+               </div>
+                    <p>Começamos no Brasil com gamificação onde ajudava empresas a fazerem
+                         sistemas e sites que facilitavam algum problema como por exemplo
+                         tarefa, separação de objetos, de forma interativa e divertida recompen-
+                         sandos os funcionários também, que fez com que ela pudesse buscar
+                         mais visibilidades aos projetos deles, se tornando uma marca de grande
+                         nome e sucesso.
+                    </p>
+                  
+               </div>
           </section>
-     </div>
+     </header> 
+
+      <section id="jogo" class="jogo">
+          <div class="container-jogo">
+               <div class="nosso-jogo">
+                    <span>Nosso jogo</span>
+               </div>
+               <div class="conteudo-resumo">
+
+                    <div class="container-resumo">
+                         <div class="radius-resumo">
+                         <h3 class="resumo-title">Resumo do jogo</h3>
+                         <p>O jogo se passa em algum lugar do
+                              espaço do universo, dentro de uma
+                              nave com o objetivo que o jogador
+                              poderá explorar o mundo e ver as
+                              cases através do passo a passo
+                              que ele irá realizar.
+                         </p>
+
+                    </div>
+               </div>    
+               <div class="jogar-agora">
+                    <div class="playbotao">
+                    <img src="./img/playbotao.png" alt="botao playbotao" srcset="">
+                    <button>JOGAR AGORA</button>
+               </div>
+                         
+                    </div>
+               </div>
+          </div>
+     </section> 
      
 
+               <section id="cases" class="cases">
+               <div class="nosso-jogo">
+               <span>Cases de sucesso</span>
+               </div>          
+               <div class="container-cards">
+               <div class="card">
+                    <img src="img/card1.jpg" alt="">
+                    <p>Empresa de papelão estava
+                         com problemas para organizar
+                         o estoque de forma correta, e
+                         foi ai que a Opgames criou um
+                         sistema onde facilitava e pontuava
+                         os funcionários.
+                    </p>
+                    <button>Ver mais</button>
+               </div>
+               <div class="card">
+                    <img src="img/card2.jpg" alt="">
+                    <p>Empresa de lixos, que tava com
+                         problemas em dividir os lixos,
+                         por exemplo onde ir os plásticos,
+                         vidro, papel, etc, então a
+                         OpGames teve a ideia de fazer
+                         um sistema de tarefas onde
+                         apenas cada funcionário cuida-
+                         va da sua área e recompensado.
+                    </p>
+                    <button>Ver mais</button>
+               </div>
+               <div class="card">
+                    <img src="img/card3.jpg" alt="">
+                    <p>Escola Particular tinha dificul-
+                         dade de fazer com que os alunos
+                         fizesse as tarefas,então decidiram
+                         criar um sistema com tare
+                         que dava recompensa e notas,
+                         e de forma interativa e divertida.
+                    </p>
+                    <button>Ver mais</button>
+               </div>
+     </section>
+
+     <section id="cadastro">
+          <div class="nosso-jogo">
+          <span>Cadastro</span>
+          </div> 
+
+          <form>
+               <div class="campo">
+                    <label for="campo-nome">Qual seu nome?</label>
+                    <input id="campo-nome" type="text" placeholder="Digite seu nome...">
+               </div>
+               <div class="campo">
+                    <label for="campo-email">Qual seu gmail?</label>
+                    <input type="email" name="" id="campo-email" placeholder="Digite gmail...">
+               </div>
+               <div class="campo">
+                    <label for="campo-descricao">Qual senha gostaria de colocar?</label>
+                    <input id="campo-descricao" placeholder="Digite sua senha...">
+               </div>
+               <button type="submit">Enviar</button>
+          </form>
+     </section>
+
+      <footer>
+          
+          <div class="contatos">
+            <div class="caixa-ctt">
+               <div class="icones-redes">
+                    <a href="#">
+                          <svg height="75px" width="75px" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg"
+                               xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve">
+                               <g>
+                               <path class="st0" d="M256,0C114.615,0,0,114.615,0,256s114.615,256,256,256s256-114.615,256-256S397.385,0,256,0z M260.926,217.391
+                               c0.084,0.004,0.164,0.021,0.25,0.025c-0.875-3.752-1.328-7.664-1.328-11.682c0-28.307,22.951-51.258,51.262-51.258
+                               c14.742,0,28.063,6.225,37.414,16.188c9.6-1.89,18.684-5.174,27.129-9.523c1.781-0.864,3.566-1.723,5.32-2.674
+                                c-3.039,9.334-8.744,17.412-16.141,23.532c-2.004,1.576-4.062,3.098-6.326,4.344c0.154-0.018,0.304-0.052,0.457-0.071
+                               c-0.15,0.093-0.275,0.22-0.428,0.312c8.402-1.005,16.459-3.051,24.111-5.942c1.715-0.592,3.428-1.191,5.127-1.852
+                               c-6.842,10.159-15.453,19.095-25.375,26.259c0.098,2.197,0.148,4.406,0.148,6.631c0,67.736-51.558,145.842-145.844,145.842
+                               c-28.947,0-55.891-8.484-78.576-23.028c4.01,0.473,8.092,0.715,12.229,0.715c19.136,0,37.014-5.269,52.383-14.34
+                               c3.871-2.23,7.658-4.639,11.273-7.365c-0.098-0.002-0.187-0.026-0.285-0.028c0.094-0.073,0.196-0.136,0.289-0.209
+                               c-19.422-0.358-36.184-11.539-44.574-27.747c-1.25-2.489-2.32-5.096-3.164-7.831c3.086,0.58,6.246,0.898,9.5,0.898
+                               c3.391,0,6.666-0.436,9.871-1.063c1.197-0.168,2.406-0.308,3.586-0.502c-0.156-0.032-0.293-0.1-0.449-0.133
+                               c0.162-0.042,0.336-0.056,0.496-0.1c-23.449-4.709-41.119-25.428-41.119-50.262c0-0.196,0.002-0.387,0.004-0.58l0.024-0.055
+                               c5.521,3.064,11.693,5.092,18.23,5.94c1.609,0.269,3.221,0.516,4.832,0.657c-0.11-0.074-0.205-0.164-0.314-0.238
+                               c0.152,0.006,0.297,0.036,0.447,0.041c-13.754-9.191-22.803-24.883-22.803-42.666c0-8.142,1.988-15.787,5.367-22.623
+                               c0.539-1.028,1.018-2.078,1.637-3.074c22.711,27.822,55.516,46.971,92.801,52.15c4.16,0.605,8.332,1.144,12.553,1.388
+                               C260.934,217.443,260.932,217.416,260.926,217.391z" />
+                               </g>
+                          </svg>
+                     </a>
+                     <a href="#">
+                          <svg width="75px" height="75px" viewBox="0 0 960 960" fill="none" xmlns="http://www.w3.org/2000/svg">
+                               <path d="M457.833 409.589C428.769 401.499 435.461 454.433 433.863 472.11C438.257 485.793 428.969 552.31 452.24 541.624C487.985 525.132 518.132 501.177 549.263 476.985C556.149 471.633 555.328 460.859 547.876 456.329C518.431 438.428 491.544 417.974 457.833 409.589ZM373.937 272.959C539.131 269.464 772.339 219.826 759.156 461.624C777.233 677.054 622.227 665.868 461.628 665.169C343.675 666.967 225.323 668.665 235.51 515.356C231.316 401.698 225.623 276.954 373.937 272.959Z" fill="white"/>
+                               <path d="M365.646 84.396C527.744 84.9952 748.867 45.4447 842.351 215.232C876.208 280.251 869.616 355.757 873.112 426.768C875.209 489.989 876.608 553.21 872.513 616.231C844.048 851.038 723.399 881.899 511.065 879.502C422.575 881.699 333.586 871.113 248.193 848.041C152.912 828.766 94.8849 738.478 90.3905 645.395C83.599 494.284 66.9198 297.23 146.52 163.497C196.258 94.2836 288.343 92.4859 365.646 84.396ZM759.254 461.624C772.338 219.827 539.229 269.465 373.936 272.96C225.522 276.955 231.314 401.699 235.509 515.357C225.422 668.766 343.674 666.968 461.626 665.17C622.226 665.969 777.332 677.055 759.254 461.624Z" fill="#000000"/>
+                               <path d="M433.859 472.113C435.457 454.435 428.766 401.402 457.829 409.591C491.542 417.977 518.359 438.432 547.844 456.334C555.304 460.863 556.132 471.647 549.241 477.002C518.117 501.189 487.975 525.138 452.236 541.626C428.966 552.313 438.254 485.796 433.859 472.113Z" fill="#000000"/>
+                               </svg>
+                     </a>
+                     <a href="#">
+                          <svg width="75px" height="75px" viewBox="0 0 960 960" fill="none" xmlns="http://www.w3.org/2000/svg">
+                               <path d="M599.256 326.893C638.207 324.995 644.199 388.816 601.453 383.223C565.997 382.224 561.503 327.892 599.256 326.893Z" fill="white"/>
+                               <path d="M726.895 478.902C729.991 250.487 638.505 220.924 429.866 233.608C286.146 222.522 229.716 331.386 229.317 460.125C221.527 586.168 260.378 745.468 417.282 732.085C613.137 728.59 735.984 708.714 726.895 478.902ZM384.423 85.7931C608.743 64.9192 868.418 97.079 871.514 377.828C879.404 507.066 883.599 645.593 820.278 762.847C752.862 877.503 640.503 872.709 523.649 875.406C420.877 879.501 314.91 888.39 215.834 854.732C114.86 819.776 87.3942 743.571 89.5915 643.895C86.0959 558.103 82.6002 472.51 84.0984 386.617C89.0921 183.071 177.981 81.099 384.423 85.7931Z" fill="#000000"/>
+                               <path d="M429.866 233.608C638.505 220.924 729.89 250.487 726.894 478.902C735.983 708.714 613.136 728.49 417.381 732.085C260.377 745.469 221.626 586.068 229.416 460.125C229.716 331.386 286.145 222.522 429.866 233.608ZM682.949 486.093C682.949 344.67 665.571 269.763 504.972 276.954C457.231 281.648 401.401 274.557 353.461 290.837C257.181 337.878 270.465 467.216 279.354 556.904C288.043 701.823 408.193 697.528 520.652 681.349C658.779 674.058 684.248 614.432 682.949 486.093Z" fill="white"/>
+                               <path d="M495.188 393.309C393.515 388.116 362.155 555.606 473.715 560.101C578.584 557.604 594.664 423.172 495.188 393.309ZM473.915 354.857C649.495 342.972 638.709 602.448 473.116 600.65C316.212 595.856 330.894 368.84 473.915 354.857Z" fill="white"/>
+                               <path d="M473.813 560.102C362.252 555.508 393.513 388.017 495.286 393.31C594.662 423.173 578.582 557.605 473.813 560.102Z" fill="#000000"/>
+                               <path d="M504.973 276.955C665.572 269.664 683.05 344.67 682.95 486.093C684.149 614.433 658.781 674.058 520.653 681.349C408.194 697.529 288.044 701.823 279.355 556.905C270.466 467.117 257.282 337.878 353.462 290.837C401.402 274.558 457.233 281.649 504.973 276.955ZM473.213 600.65C638.706 602.448 649.592 342.972 474.012 354.857C330.89 368.84 316.209 595.856 473.213 600.65ZM601.452 383.222C644.199 388.815 638.206 325.094 599.255 326.892C561.502 327.891 565.997 382.223 601.452 383.222Z" fill="#000000"/>
+                          </svg>
+                     </a>
+                     <a href="">
+                               <svg fill="#000000" width="75px" height="75px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                               <title/>
+                               <g id="Gmail">
+                               <path d="M25.49,30H4.5A3.35,3.35,0,0,1,2,29a3.35,3.35,0,0,1-1-2.48V5.5A3.35,3.35,0,0,1,2,3,3.35,3.35,0,0,1,4.5,2h21A3.35,3.35,0,0,1,28,3,3.35,3.35,0,0,1,29,5.5v21A3.52,3.52,0,0,1,25.49,30Zm-3-7.17a2.93,2.93,0,0,0,1.71-.37,1.41,1.41,0,0,0,.49-1.22V10.36a1.55,1.55,0,0,0-.47-1.13,1.51,1.51,0,0,0-1.13-.47H6.83a1.55,1.55,0,0,0-1.13.47,1.53,1.53,0,0,0-.47,1.12V21.24a1.53,1.53,0,0,0,.47,1.12,1.55,1.55,0,0,0,1.13.47Zm-14.7-.76V13.14l6.46,4.45Zm14.14.37H8l6.63-4.63a.6.6,0,0,0,.34.16,1,1,0,0,0,.33-.16Zm-7-8.15L8,9.16H21.9Zm7.14,7.78-6.46-4.48,6.46-4.45Z"/>
+                               </g>
+                               </svg>     
+                     </a>
+ 
+                     <a href="">
+                               <svg fill="#000000" height="75px" width="75px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                               viewBox="-143 145 512 512" xml:space="preserve">
+                               <path d="M113,145c-141.4,0-256,114.6-256,256s114.6,256,256,256s256-114.6,256-256S254.4,145,113,145z M169.5,357.6l-2.9,38.3h-39.3
+                               v133H77.7v-133H51.2v-38.3h26.5v-25.7c0-11.3,0.3-28.8,8.5-39.7c8.7-11.5,20.6-19.3,41.1-19.3c33.4,0,47.4,4.8,47.4,4.8l-6.6,39.2
+                               c0,0-11-3.2-21.3-3.2c-10.3,0-19.5,3.7-19.5,14v29.9H169.5z"/>
+                               </svg>
+                     </a>
+               </div>
+          </div>
+
+          <div class="caixa-sup" id="contatos"> 
+          <div class="suportes">
+               <div class="localizacao Ptxt"> 
+                   <a href="#"><i class="fa-solid fa-location-dot"></i><span class="txt"> Localização </span></a>
+               </div>
+               <div class="suporte Ptxt">
+                  <a href="#"> <i class="fa-solid fa-handshake-angle"></i> <span class="txt"> Suporte </span> </a>
+               </div>
+               </div>
+               
+          </div>
+     </div>
+          </footer> 
+          
 </body>
+
 </html>
-
-
-
-    
-
-
