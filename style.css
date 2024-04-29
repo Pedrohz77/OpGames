@@ -216,7 +216,7 @@ h2{
 }
 
 .playbotao:hover {
-    background-color: #1F4C87;
+    background-color: #F2790C;
 }
 
 /*
@@ -493,6 +493,11 @@ footer i {
     
 }
 
+.localizacao a:hover {
+    background-color: #1F4C87;
+}
+
+
 .back{
     height: 100%;
     width: 25%;
@@ -529,6 +534,10 @@ footer i {
     font-family: "Lalezar", sans-serif; 
     font-weight: 300;
     font-size: 20px;
+}
+
+.suporte a:hover {
+    background-color: #1F4C87;
 }
 
 .icones-rede{
