@@ -5,6 +5,10 @@
     color:#fff;
 }
 
+body {
+    overflow-x: none;
+}
+
 header {
     display: flex;
     height: 100vh;
@@ -261,6 +265,7 @@ h2{
 */
 
 #cases {
+    padding-top: 7vh;
     height: 100%;
     background-color: #233967;
     text-align: center;
@@ -555,6 +560,7 @@ footer i {
     justify-content: space-around;
     align-items: center;
     padding: 0.5rem;
+    min-width: 45vw;
 }
 
 .icones-redes >a>svg {
