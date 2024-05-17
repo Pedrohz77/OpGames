@@ -17,6 +17,7 @@
 
      <script src="https://kit.fontawesome.com/657056d04b.js" crossorigin="anonymous"></script>
      <link rel="stylesheet" href="style.css">
+     <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -32,6 +33,7 @@
                          <a href="#cadastro">Cadastro</a>
                          <a href="#contatos">Contatos</a>
                     </nav>
+
                </div>
 
           <section id="sobre" class="sobre">
@@ -130,21 +132,22 @@
           <span>Cadastro</span>
           </div> 
 
-          <form>
+         <form onsubmit="solicitarOrcamento(event)">
                <div class="campo">
                     <label for="campo-nome">Qual seu nome?</label>
-                    <input id="campo-nome" type="text" placeholder="Digite seu nome...">
+                    <input required id="campo-nome" type="text" placeholder="Digite seu nome...">
                </div>
                <div class="campo">
                     <label for="campo-email">Qual seu gmail?</label>
-                    <input type="email" name="" id="campo-email" placeholder="Digite gmail...">
+                    <input required type="email" name="" id="campo-email" placeholder="Digite gmail...">
                </div>
                <div class="campo">
                     <label for="campo-descricao">Qual senha gostaria de colocar?</label>
-                    <input id="campo-descricao" placeholder="Digite sua senha...">
+                    <input required id="campo-descricao" placeholder="Digite sua senha...">
                </div>
                <button type="submit">Enviar</button>
           </form>
+
      </section>
 
       <footer>
