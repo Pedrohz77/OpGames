@@ -1,10 +1,5 @@
 
 
-
-
-
-
-
 const solicitarOrcamento = (event) => {
     let valorNome = document.getElementById("campo-nome").value
     let valorEmail = document.getElementById("campo-email").value
