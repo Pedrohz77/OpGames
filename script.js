@@ -1,4 +1,14 @@
 // let menu = document.queryselector("#menu")
+var cond;
+window.onload = () => {
+if (window.innerWidth > 1299) {
+    iconeX.style.display = "none"
+    cond = 0
+    menu.classList.remove("menu-fechado")
+    iconesBarras.style.display= "none"
+}
+}
+
 let menu = document.getElementsByClassName("menu")[0]
 let iconesBarras = document.getElementById("icone-barras")
 let iconeX = document.querySelector("#icone-x")
@@ -14,7 +24,7 @@ function abrirFecharMenu() {
 
        // Esconder icone Barras
        iconesBarras.style.display= "none"
-        
+       cond = 0  
     }
     else {
         // Fechar o menu
@@ -25,14 +35,26 @@ function abrirFecharMenu() {
 
         // Esconder icone Barras
         iconesBarras.style.display= "inline"
-
+        cond = 1
     }
 }
 
 window.onresize = () => {
-    menu.classList.remove("menu-fechado")
-    iconeX.style.display = "inline"
-    iconesBarras.style.display= "none"
+    if (window.innerWidth > 1299 && menu.classList.contains("menu-fechado")) {
+        cond = 0
+        menu.classList.remove("menu-fechado") 
+    } 
+    if (window.innerWidth > 1299) {
+        iconeX.style.display = "none"
+
+        iconesBarras.style.display= "none"
+        
+    } else if (cond == 0 ) {
+        iconeX.style.display = "inline"
+        
+    } else {
+        iconesBarras.style.display= "inline"
+    }
 }
 
 const solicitarOrcamento = (event) => {

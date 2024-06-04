@@ -21,21 +21,26 @@ header {
     background-position: 165% 40%;
 }
 
+.menu {
+    display:  inline;
+}
+
+.menu-h {
+    display: none;
+}
+
 .menu-p {
     display: flex;
-    width: 100%;
-    justify-content: space-between;
-    padding: 1rem 5rem; 
-
+    width: 75%;
+    padding: 1rem 2rem;
 }
 
 .container-grid {
     display: flex;
-    width: 100vw;
+    width: 100%;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
     row-gap: 2vh;
-    
 }
 
 header img {
@@ -596,10 +601,6 @@ footer i {
     gap: 1rem;
 }
 
-#icone-barras {
-    display: none;
-}
-
 #icone-x {
     display: none;
 }
@@ -607,8 +608,6 @@ footer i {
 .menu-fechado {
     display: none;
 }
-
-
 
 @media screen and (max-width: 1300px) {
     header {
@@ -619,12 +618,13 @@ footer i {
     width: 50px;
     position: relative;
     
-    display: unset;
+    display: inline;
     
     background: none;
     border: none;
-            
+       
     }
+
     
     nav.menu {
     height: 400px;
@@ -657,7 +657,10 @@ footer i {
     color: white;
     font-family: "inter";
     }
-
+    
+    .menu a {
+    font-size: 3vw;
+    }
 }
 
 @media screen and (max-width:1300px) {
